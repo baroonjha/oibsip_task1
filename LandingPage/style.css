@@ -1,0 +1,223 @@
+ /* Navigation Bar */
+ *{
+    padding: 0px ;
+    margin: 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+
+}
+
+#navbar {
+    position: sticky;
+    display: flex;
+    align-items: center;
+    position: absolute;
+}
+
+#navbar::before{
+    content: "";
+    background-color: rgb(158, 29, 29);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+/* logo and image */
+#logo{
+ margin: 23px 20px;
+
+}
+#logo img{
+height: 60px;
+margin: 0px 0px;
+border-radius: 14px;
+
+}
+
+#navbar ul{
+     display: flex;
+   
+    }
+    #navbar ul li{
+        list-style: none;
+        font-size: 1.3rem;
+        
+    }
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: rgb(129, 21, 21);
+    display: block;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+ /* Home Section */
+#home{
+    height: 591px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: -6px 0px;
+    padding: 2px 200px;
+}
+#home::before{
+    content: "";
+    background:url('../img/back.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 804px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+
+   
+}
+
+#home h1{
+    color: rgb(252, 252, 252);
+    text-align: center;
+}
+#home p{
+    margin: 2px 4px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+    color: rgb(244, 242, 242);
+    text-align: center;
+}
+
+/* our services */
+#services-container{
+    margin: 90px 0px;
+}
+
+#services{
+    display: flex;
+    margin: 20px ;
+    /* padding: 4px 4px; */
+    align-items: center;
+    justify-content: center;
+   
+}
+#services .box{
+    /* align-items: center; */
+    /* justify-content: center; */
+    text-align: center;
+    padding: 2px 10px;
+    height: 400px;
+    width: 350px;
+    border: 4px solid red;
+    margin: 10px 5px;
+    border-radius: 20px;
+    background-color:rgb(250, 243, 232);
+   
+}
+#services .box img{
+    height: 200px;
+    margin: 10px 2px;
+    /* padding: 2px 5px; */
+   
+}
+
+/* clients */
+#client{
+    /* margin: 60px; */
+    /* margin-top: -45px; */
+    position: relative;
+}
+ #clientlogo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+} 
+
+#clientlogo img{
+    /* display: flex; */
+    height: 200px;
+    margin: 10px 0px;
+    /* padding: 2px 5px; */
+    
+}
+
+/* conatct section */
+
+#contact{
+position: relative;
+}
+#contact-box{
+    display: flex;
+    /* text-align: center; */
+    justify-content: center;
+    padding-bottom: 30px;
+
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url(img/contact.jpg) no-repeat center center/cover;
+}
+#contact-box input, #contact-box textarea{
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  /* text-align: center; */
+  
+}
+#contact-box form{
+    width: 30%;
+}
+#contact-box label{
+    font-size: 25px;
+}
+
+/* Footer */
+
+footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+
+
+/* Utility class */
+
+.h-primary{
+    font-size: 3.5rem;
+    padding:12px;
+}
+.h-secondary{
+    font-size: 2.5rem;
+    padding:12px;
+}
+
+.btn{
+    color: white;
+  padding: 4px 20px;
+  border: 2px solid white;
+  background-color: rgb(204, 135, 135);
+  border-radius: 15px;
+  font-size: 25px;
+  margin: 17px;
+  cursor: pointer;
+}
+
+.center{
+    text-align: center;
+}
